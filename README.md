@@ -2,6 +2,8 @@
 
 ![Design preview for the Calculator app coding challenge](./design/desktop-preview.jpg)
 
+[Calculator app link](https://mrvikashkumar.github.io/simplest-calculator/)
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
