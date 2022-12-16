@@ -18,6 +18,10 @@ window.addEventListener('keydown', (e) => {
 
 // calculator functionality
 function calcFunctionality(value) {
+  let keyArr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "Backspace", "+", "-", "*", "/", ".", "Delete", "Enter"];
+  for(let key of keyArr){
+    
+  }
   if (value == 0 || value == 1 || value == 2 || value == 3 || value == 4 || value == 5 || value == 6 || value == 7 || value == 8 || value == 9 || value == "Backspace" || value == "+" || value == "-" || value == "*" || value == "/" || value == "." || value == "Delete" || value == "Enter") {
     if (value === "Backspace") {
       tempArr.pop()
