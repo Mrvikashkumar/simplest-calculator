@@ -1,5 +1,7 @@
+let container = document.querySelector('.container');
 let rstSc = document.getElementById('rst');
 let btns = document.querySelectorAll('.btn');
+let themeToggleBtn = document.querySelectorAll('.theme input')
 let tempArr = []
 btns.forEach(element => {
   element.addEventListener('click', (e) => {
@@ -53,3 +55,28 @@ function calcFunctionality(value) {
     }
   }
 }
+
+// theme functionality
+// default theme
+window.addEventListener('DOMContentLoaded', ()=>{
+  container.classList.add('theme-1')
+})
+// manually theme toggle
+themeToggleBtn.forEach(element => {
+  element.addEventListener('click', (e) => {
+    let idValue = e.target.attributes.id.value;
+    if(idValue == "blue-theme"){
+      container.classList.remove("theme-2")
+      container.classList.remove("theme-3")
+      container.classList.add('theme-1')
+    }else if(idValue == "light-theme"){
+      container.classList.remove("theme-1")
+      container.classList.remove("theme-3")
+      container.classList.add('theme-2')
+    }else{
+      container.classList.remove("theme-1")
+      container.classList.remove("theme-2")
+      container.classList.add('theme-3')
+    }
+  })
+})
