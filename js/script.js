@@ -3,7 +3,6 @@ let btns = document.querySelectorAll('.btn');
 let tempArr = []
 btns.forEach(element => {
   element.addEventListener('click', (e) => {
-    console.dir(e.currentTarget.dataset.btnValue)
     let inputValue = e.currentTarget.dataset.btnValue;
     if (inputValue === "Backspace") {
       tempArr.pop()
@@ -11,7 +10,7 @@ btns.forEach(element => {
     } else if (inputValue == "Delete") {
       rstSc.value = "";
       tempArr = []
-    }else if(inputValue == "="){
+    }else if(inputValue == "Enter"){
       if(rstSc.value.length > 0){
         let rstValue = eval(tempArr.join(""));
         tempArr = [...String(rstValue)]
