@@ -42,6 +42,13 @@ body{
 .theme-1.container .calc-top{
   color: #fff;
 }
+.theme-1.container .calc-top .theme-toggle{
+  background-color: hsl(223, 31%, 20%);
+}
+.theme-1.container .calc-top .theme-toggle span{
+  background-color: hsl(6, 63%, 50%);
+  left: 0;
+}
 .theme-1.container .rst-sc{
   background-color: hsl(224, 36%, 15%);
 }
@@ -82,6 +89,14 @@ body{
 .theme-2.container .calc-top{
   color: hsl(221, 14%, 31%);
 }
+.theme-2.container .calc-top .theme-toggle{
+  background-color: hsl(0, 5%, 81%);
+}
+.theme-2.container .calc-top .theme-toggle span{
+  background-color: hsl(25, 98%, 40%);
+  left: 50%;
+  transform: translateX(-50%);
+}
 .theme-2.container .rst-sc{
   background-color: hsl(0, 0%, 93%);
 }
@@ -120,6 +135,14 @@ body{
 }
 .theme-3.container .calc-top{
   color: hsl(52, 100%, 62%);
+}
+.theme-3.container .calc-top .theme-toggle{
+  background-color: hsl(268, 71%, 12%);
+}
+.theme-3.container .calc-top .theme-toggle span{
+  background-color: hsl(176, 100%, 44%);
+  left: 100%;
+  transform: translateX(-100%);
 }
 .theme-3.container .rst-sc{
   background-color: hsl(268, 71%, 12%);
@@ -185,6 +208,38 @@ body{
 }
 .themes-content{
   gap: 5px;
+  position: relative;
+}
+.theme{
+  gap: 5px;
+}
+.theme input{
+  opacity: 0;
+  position: relative;
+  z-index: 99;
+  cursor: pointer;
+}
+.theme-toggle{
+  width: 50px;
+  height: 15px;
+  background-color: red;
+  border-radius: 10px;
+  padding: 0 2px;
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9;
+  display: flex;
+  cursor: pointer;
+}
+.theme-toggle span{
+  align-self: center;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  position: relative;
+  transition: all .5s;
 }
 .rst-sc{
   width: 100%;
