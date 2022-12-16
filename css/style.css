@@ -68,6 +68,7 @@ body{
   border-radius: 10px;
 }
 .rst-sc input{
+  height: 80px;
   background-color: transparent;
   border: none;
   padding: 20px;
@@ -132,4 +133,12 @@ table tr td{
 }
 .btn-2:hover{
   background-color: hsl(6, 87%, 38%);
+}
+
+/* JavaScript classes */
+#rst.above-18-digit{
+  font-size: 1.5rem;
+}
+#rst.above-27-digit{
+  font-size: 1rem;
 }
