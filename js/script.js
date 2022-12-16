@@ -21,6 +21,8 @@ function calcFunctionality(value) {
   let keyArr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "Backspace", "+", "-", "*", "/", ".", "Delete", "Enter"];
   for(let key of keyArr){
     if (value == key) {
+      let audio = new Audio("audio/click-sound.mp3");
+      audio.play();
       if (value === "Backspace") {
         tempArr.pop()
         rstSc.value = tempArr.join('')
