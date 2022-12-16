@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js" defer></script>
@@ -29,22 +31,22 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="container d-flex align-center justify-center">
     <div class="calc">
-      <div class="calc-top">
+      <div class="calc-top d-flex align-center space-between">
         <p>Calc<span>.</span></p>
-        <div class="themes">
+        <div class="themes d-flex gap-10">
           <span>THEME</span>
-          <div class="themes-content">
-            <div class="theme">
+          <div class="themes-content d-flex">
+            <div class="theme d-flex align-center justify-center flex-column">
               <label for="theme-1">1</label>
               <input type="radio" name="theme" id="theme-1">
             </div>
-            <div class="theme">
+            <div class="theme d-flex align-center justify-center flex-column">
               <label for="theme-2">2</label>
               <input type="radio" name="theme" id="theme-2">
             </div>
-            <div class="theme">
+            <div class="theme d-flex align-center justify-center flex-column">
               <label for="theme-3">3</label>
               <input type="radio" name="theme" id="theme-3">
             </div>
@@ -58,32 +60,48 @@
         <div class="calc-btns">
           <table>
             <tr>
-              <td><button class="btn">7</button></td>
-              <td><button class="btn">8</button></td>
-              <td><button class="btn">9</button></td>
-              <td><button class="btn btn-1">DEL</button></td>
+              <td><button class="btn" data-btn-value="7">7</button></td>
+              <td><button class="btn" data-btn-value="8">8</button></td>
+              <td><button class="btn" data-btn-value="9">9</button></td>
+              <td><button class="btn btn-1" data-btn-value="Backspace">
+                  <i class="fa-solid fa-delete-left"></i>
+                </button></td>
             </tr>
             <tr>
-              <td><button class="btn">4</button></td>
-              <td><button class="btn">5</button></td>
-              <td><button class="btn">6</button></td>
-              <td><button class="btn">+</button></td>
+              <td><button class="btn" data-btn-value="4">4</button></td>
+              <td><button class="btn" data-btn-value="5">5</button></td>
+              <td><button class="btn" data-btn-value="6">6</button></td>
+              <td><button class="btn btn-3" data-btn-value="+">
+                  <i class="fa-solid fa-plus"></i>
+                </button></td>
             </tr>
             <tr>
-              <td><button class="btn">1</button></td>
-              <td><button class="btn">2</button></td>
-              <td><button class="btn">3</button></td>
-              <td><button class="btn">-</button></td>
+              <td><button class="btn" data-btn-value="1">1</button></td>
+              <td><button class="btn" data-btn-value="2">2</button></td>
+              <td><button class="btn" data-btn-value="3">3</button></td>
+              <td><button class="btn btn-3" data-btn-value="-">
+                  <i class="fa-solid fa-minus"></i>
+                </button></td>
             </tr>
             <tr>
-              <td><button class="btn">.</button></td>
-              <td><button class="btn">0</button></td>
-              <td><button class="btn">/</button></td>
-              <td><button class="btn btn-3">X</button></td>
+              <td><button class="btn" data-btn-value=".">.</button></td>
+              <td><button class="btn" data-btn-value="0">0</button></td>
+              <td><button class="btn btn-3" data-btn-value="/">
+                  <i class="fa-solid fa-divide"></i>
+                </button></td>
+              <td><button class="btn btn-3" data-btn-value="*">
+                  <i class="fa-solid fa-xmark"></i>
+                </button></td>
             </tr>
             <tr>
-              <td colspan="2"><button class="btn btn-1">RESET</button></td>
-              <td colspan="2"><button class="btn btn-2">=</button></td>
+              <td colspan="2"><button class="btn btn-1 d-flex align-center justify-center gap-10"
+                  data-btn-value="Delete">
+                  <i class="fa-solid fa-trash"></i>
+                  <span>RESET</span>
+                </button></td>
+              <td colspan="2"><button class="btn btn-2" data-btn-value="Enter">
+                  <i class="fa-solid fa-equals"></i>
+                </button></td>
             </tr>
           </table>
         </div>

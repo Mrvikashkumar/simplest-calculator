@@ -7,6 +7,34 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+/* utility class */
+.d-flex{
+  display: flex;
+}
+.flex-1{
+  flex: 1;
+}
+.flex-column{
+  flex-direction: column;
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}
+.space-between{
+  justify-content: space-between;
+}
+.justify-center{
+  justify-content: center;
+}
+.align-center{
+  align-items: center;
+}
+.gap-10{
+  gap: 10px;
+}
+
+
 body{
   width: 100%;
   height: 100vh;
@@ -16,9 +44,6 @@ body{
   width: 100%;
   max-width: 1440px;
   height: 100vh;
-  display: flex;
-  text-align: center;
-  justify-content: center;
   position: relative;
 }
 .calc{
@@ -28,9 +53,6 @@ body{
   font-family: 'League Spartan', sans-serif;
 }
 .calc-top{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   color: #fff;
 }
 .calc-top p{
@@ -40,10 +62,6 @@ body{
 .calc-top p span{
   color: red;
 }
-.themes{
-  display: flex;
-  gap: 10px;
-}
 .themes span, .themes label{
   font-size: 10px;
 }
@@ -52,14 +70,7 @@ body{
   font-weight: 600;
 }
 .themes-content{
-  display: flex;
   gap: 5px;
-}
-.theme{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 .rst-sc{
   width: 100%;
@@ -100,7 +111,6 @@ table tr td{
 .btn{
   width: 100%;
   height: 55px;
-  line-height: 50px;
   font-family: 'League Spartan', sans-serif;
   font-size: 32px;
   font-weight: 700;
@@ -115,8 +125,8 @@ table tr td{
 .btn:hover{
   background-color: #fff;
 }
-.btn-1, .btn-3{
-  font-size: 24px;
+.btn-1, .btn-3, .btn-4, .btn-1 i{
+  font-size: 20px;
 }
 .btn-1{
   background-color: hsl(225, 21%, 49%);

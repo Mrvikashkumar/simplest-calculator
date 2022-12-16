@@ -3,13 +3,12 @@ let btns = document.querySelectorAll('.btn');
 let tempArr = []
 btns.forEach(element => {
   element.addEventListener('click', (e) => {
-    let inputValue = e.target.innerText;
-    // let rstScValue = rstSc.value;
-    if (inputValue === "DEL") {
-      // console.log("hii")
+    console.dir(e.currentTarget.dataset.btnValue)
+    let inputValue = e.currentTarget.dataset.btnValue;
+    if (inputValue === "Backspace") {
       tempArr.pop()
       rstSc.value = tempArr.join('')
-    } else if (inputValue == "RESET") {
+    } else if (inputValue == "Delete") {
       rstSc.value = "";
       tempArr = []
     }else if(inputValue == "="){
